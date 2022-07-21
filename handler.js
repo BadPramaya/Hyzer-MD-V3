@@ -746,16 +746,16 @@ Untuk mematikan fitur ini, ketik
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: 'Perintah ini hanya dapat digunakan oleh _*OWWNER!1!1!*_',
-        owner: 'Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
-        mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
-        premium: 'Perintah ini hanya untuk member _*Premium*_ !',
-        group: 'Perintah ini hanya dapat digunakan di grup!',
-        private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
-        admin: 'Perintah ini hanya untuk *Admin* grup!',
-        botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
-        unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*',
-        restrict: 'Fitur ini di *disable*!'
+        rowner: 'This command can only be used by _*OWWNER!1!1!*_',
+         owner: 'This command can only be used by _*Owner Bot*_!',
+         mods: 'This command can only be used by _*Moderator*_ !',
+         premium: 'This order is only for _*Premium*_ members!',
+         group: 'This command can only be used in groups!',
+         private: 'This command can only be used in Private Chat!',
+         admin: 'This command is for *Admin* group only!',
+         botAdmin: 'Make bot as *Admin* to use this command!',
+         unreg: 'Please register to use this feature by typing:\n\n*#name.age list*\n\nExample: *#Human list.16*',
+         restrict: 'This feature is *disabled*!'
     }[type]
     if (msg) return m.reply(msg)
 }
